@@ -14,7 +14,7 @@ A full-stack PDF upload application with drag-and-drop functionality, built with
 ## Technology Stack
 
 ### Frontend
-- **React 19** with TypeScript
+- **React 18** with TypeScript (compatible with Create React App)
 - **react-dropzone** for drag-and-drop functionality
 - **Axios** for API communication
 - **CSS-in-JS** styling with modern gradients
@@ -89,8 +89,10 @@ Set up the following environment variables:
 2. **Start the Frontend** (Terminal 2)
    ```bash
    cd frontend
-   npm start
+   PORT=5000 npm start
    ```
+   
+   *Note: Setting PORT=5000 ensures the frontend runs on port 5000 to match the workflow configuration. Without this, Create React App defaults to port 3000.*
 
 The application will be available at `http://localhost:5000`
 
